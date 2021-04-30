@@ -2,9 +2,8 @@ def lista (A,B):
   n = len(A)//2
   C =[]
   for i in range(n):
-    e = (A[i]+i)**2
-    f = e * B[2*i]
-    g = f + B[n+1]
+    e = (A[i+1]**2)*B[2*i]
+    g = e + B[n+i]
     C.append(g)
   print('C =', C)
 
